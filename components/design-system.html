@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <title>Design System</title>
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="../components/design-system.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <!-- Design System Title Section-->
+        <section id="system-title" class="flex justify-between align-center">
+          <div class="flex" id="logo">
+            <svg
+              width="3rem"
+              height="3rem"
+              viewBox="0 0 48 48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="24" cy="24" r="24" fill="white" />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M24 0C24 0 24 24 0 24C23.5776 24.1714 24 48 24 48C24 48 24 24 48 24C24 24 24 0 24 0Z"
+                fill="#0B0D17"
+              />
+            </svg>
+          </div>
+          <h6
+            class="ff-barlow-cond normal uppercase letter-spacing-4"
+            style="font-size: 1.5rem"
+          >
+            Style Guide
+          </h6>
+        </section>
+        <!-- Design System Color Section-->
+        <section id="colors" class="system-section flex column">
+          <h5 class="numbered-title"><span>01</span> Colors</h5>
+          <div class="system-color-container flex column">
+            <p class="fs-9 bold">Blue</p>
+            <div class="divider-white"></div>
+            <div class="system-color-cards grid">
+              <div class="flex column">
+                <div
+                  class="system-color-bg-card bg-dark flex column border-light"
+                >
+                  <h6
+                    class="system-color-code ff-bellefair uppercase text-white"
+                    style="font-size: 1.5rem"
+                  >
+                    #0B0D17
+                  </h6>
+                  <h6
+                    class="system-color-code-title ff-bellefair uppercase text-white"
+                    style="font-size: 1.5rem"
+                  >
+                    Blue-900
+                  </h6>
+                </div>
+                <div class="flex column">
+                  <div class="system-color-code-card flex">
+                    <p class="fs-9">RGB</p>
+                    <p class="fs-9">11, 13, 23</p>
+                  </div>
+                  <div class="system-color-code-card flex">
+                    <p class="fs-9">HSL</p>
+                    <p class="fs-9">230°, 35%, 7%</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex column">
+                <div
+                  class="system-color-bg-card bg-light flex column border-light"
+                >
+                  <h6
+                    class="system-color-code ff-bellefair uppercase text-dark"
+                    style="font-size: 1.5rem"
+                  >
+                    #D0D6F9
+                  </h6>
+                  <h6
+                    class="system-color-code-title ff-bellefair uppercase text-dark"
+                    style="font-size: 1.5rem"
+                  >
+                    Blue-900
+                  </h6>
+                </div>
+                <div class="flex column">
+                  <div class="system-color-code-card flex">
+                    <p class="fs-9">RGB</p>
+                    <p class="fs-9">208, 214, 249</p>
+                  </div>
+                  <div class="system-color-code-card flex">
+                    <p class="fs-9">HSL</p>
+                    <p class="fs-9">231°, 77%, 90%</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="system-color-container flex column">
+            <p class="fs-9 bold">White</p>
+            <div class="divider-white"></div>
+            <div class="system-color-cards grid">
+              <div class="flex column">
+                <div
+                  class="system-color-bg-card bg-white flex column border-light"
+                >
+                  <h6
+                    class="system-color-code ff-bellefair uppercase text-dark"
+                    style="font-size: 1.5rem"
+                  >
+                    #FFFFFF
+                  </h6>
+                  <h6
+                    class="system-color-code-title ff-bellefair uppercase text-dark"
+                    style="font-size: 1.5rem"
+                  >
+                    White
+                  </h6>
+                </div>
+                <div class="flex column">
+                  <div class="system-color-code-card flex">
+                    <p class="fs-9">RGB</p>
+                    <p class="fs-9">255, 255, 255</p>
+                  </div>
+                  <div class="system-color-code-card flex">
+                    <p class="fs-9">HSL</p>
+                    <p class="fs-9">0°, 0%, 100%</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Design System Typography Section-->
+        <section id="typography" class="system-section flex column">
+          <h5 class="numbered-title"><span>02</span> Typography</h5>
+          <div class="system-typography-container grid">
+            <div class="system-typography-cards flex column">
+              <div class="system-typography-card flex column">
+                <p class="fs-9">
+                  <span class="bold">Text Preset 1 - Bellefair Regular</span>
+                  <br />144px - 171.9% Line Height (Normal) - 0px Letter Spacing
+                </p>
+                <div class="divider-white"></div>
+                <h1 class="fs-1 ff-bellefair uppercase">Earth</h1>
+              </div>
+              <div class="system-typography-card flex column">
+                <p class="fs-9">
+                  <span class="bold">Text Preset 2 - Bellefair Regular</span>
+                  <br />100px - 114.6% Line Height (Normal) - 0px Letter Spacing
+                </p>
+                <div class="divider-white"></div>
+                <h2 class="fs-2 ff-bellefair uppercase">VENUS</h2>
+              </div>
+              <div class="system-typography-card flex column">
+                <p class="fs-9">
+                  <span class="bold">Text Preset 3 - Bellefair Regular</span>
+                  <br />56px - 64.2% Line Height (Normal) - 0px Letter Spacing
+                </p>
+                <div class="divider-white"></div>
+                <h3 class="fs-3 ff-bellefair uppercase">JUPITER & SATURN</h3>
+              </div>
+              <div class="system-typography-card flex column">
+                <p class="fs-9">
+                  <span class="bold">Text Preset 4 - Bellefair Regular</span>
+                  <br />32px - 36.7% Line Height (Normal) - 0px Letter Spacing
+                </p>
+                <div class="divider-white"></div>
+                <h4 class="fs-4 ff-bellefair uppercase">
+                  URANUS, NEPTUNE, & PLUTO
+                </h4>
+              </div>
+              <div class="system-typography-card flex column">
+                <p class="fs-9">
+                  <span class="bold"
+                    >Text Preset 5 - Barlow Condensed Regular</span
+                  >
+                  <br />28px - 33.6% Line Height (Normal) - 4px Letter Spacing
+                </p>
+                <div class="divider-white"></div>
+                <h5 class="fs-5 ff-barlow-cond letter-spacing-4 uppercase">
+                  HAUMEA, SEDNA, ERIS, & CERES
+                </h5>
+              </div>
+            </div>
+            <div class="system-typography-cards flex column">
+              <div class="system-typography-card flex column">
+                <p class="fs-9">
+                  <span class="bold">Text Preset 6 - Bellefair Regular</span>
+                  <br />28px - 32.1% Line Height (Normal) - 0px Letter Spacing
+                </p>
+                <div class="divider-white"></div>
+                <h6 class="fs-6 ff-bellefair uppercase">384,400 km</h6>
+              </div>
+              <div class="system-typography-card flex column">
+                <p class="fs-9">
+                  <span class="bold"
+                    >Text Preset 7 - Barlow Condensed Regular</span
+                  >
+                  <br />14px - 16.8% Line Height (Normal) - 2px Letter Spacing
+                </p>
+                <div class="divider-white"></div>
+                <p class="fs-7 ff-barlow-cond letter-spacing-2 uppercase">
+                  AVG. DISTANCE
+                </p>
+              </div>
+              <div class="system-typography-card flex column">
+                <p class="fs-9">
+                  <span class="bold"
+                    >Text Preset 8 - Barlow Condensed Regular</span
+                  >
+                  <br />16px - 19.2% Line Height (Normal) - 2px Letter Spacing
+                </p>
+                <div class="divider-white"></div>
+                <p class="fs-8 ff-barlow-cond letter-spacing-2 uppercase">
+                  EUROPA
+                </p>
+              </div>
+              <div class="system-typography-card flex column">
+                <p class="fs-9">
+                  <span class="bold"
+                    >Text Preset 8 - Barlow Condensed Bold</span
+                  >
+                  <br />16px - 19.2% Line Height (Normal) - 2.7px Letter Spacing
+                </p>
+                <div class="divider-white"></div>
+                <p
+                  class="fs-8 ff-barlow-cond bold letter-spacing-207 uppercase"
+                >
+                  EUROPA
+                </p>
+              </div>
+              <div class="system-typography-card flex column">
+                <p class="fs-9">
+                  <span class="bold">Text Preset 9 - Barlow Regular</span>
+                  <br />18px - 180% Line Height - 0px Letter Spacing
+                </p>
+                <div class="divider-white"></div>
+                <p class="fs-9 ff-barlow">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In
+                  nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed
+                  pretium, ligula sollicitudin laoreet viverra, tortor libero
+                  sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis.
+                  Ut justo. Suspendisse potenti.Lorem ipsum dolor sit amet,
+                  consectetuer adipiscing elit. Phasellus hendrerit.
+                  Pellentesque aliquet nibh nec urna. In nisi neque, aliquet
+                  vel, dapibus id, mattis vel, nisi. Sed pretium, ligula
+                  sollicitudin laoreet viverra, tortor libero sodales leo, eget
+                  blandit nunc tortor eu nibh.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Design System Spacing Section-->
+        <section id="spacing" class="system-section flex column">
+          <h5 class="numbered-title"><span>03</span> Spacing</h5>
+          <div class="system-spacing-container flex wrap">
+            <div class="system-spacing-card flex column">
+              <div class="flex">
+                <p class="fs-9 ff-barlow bold">1600</p>
+                <p class="fs-9">128px/8rem</p>
+              </div>
+              <div class="spacing-128px">
+                <div class="spacing-block bg-white"></div>
+              </div>
+            </div>
+            <div class="system-spacing-card flex column">
+              <div class="flex">
+                <p class="fs-9 ff-barlow bold">1200</p>
+                <p class="fs-9">96px/6rem</p>
+              </div>
+              <div class="spacing-96px">
+                <div class="spacing-block bg-white"></div>
+              </div>
+            </div>
+            <div class="system-spacing-card flex column">
+              <div class="flex">
+                <p class="fs-9 ff-barlow bold">1000</p>
+                <p class="fs-9">80px/5rem</p>
+              </div>
+              <div class="spacing-80px">
+                <div class="spacing-block bg-white"></div>
+              </div>
+            </div>
+            <div class="system-spacing-card flex column">
+              <div class="flex">
+                <p class="fs-9 ff-barlow bold">800</p>
+                <p class="fs-9">64px/4rem</p>
+              </div>
+              <div class="spacing-64px">
+                <div class="spacing-block bg-white"></div>
+              </div>
+            </div>
+            <div class="system-spacing-card flex column">
+              <div class="flex">
+                <p class="fs-9 ff-barlow bold">600</p>
+                <p class="fs-9">48px/3rem</p>
+              </div>
+              <div class="spacing-48px">
+                <div class="spacing-block bg-white"></div>
+              </div>
+            </div>
+            <div class="system-spacing-card flex column">
+              <div class="flex">
+                <p class="fs-9 ff-barlow bold">500</p>
+                <p class="fs-9">40px/2.5rem</p>
+              </div>
+              <div class="spacing-40px">
+                <div class="spacing-block bg-white"></div>
+              </div>
+            </div>
+            <div class="system-spacing-card flex column">
+              <div class="flex">
+                <p class="fs-9 ff-barlow bold">400</p>
+                <p class="fs-9">32px/2rem</p>
+              </div>
+              <div class="spacing-32px">
+                <div class="spacing-block bg-white"></div>
+              </div>
+            </div>
+            <div class="system-spacing-card flex column">
+              <div class="flex">
+                <p class="fs-9 ff-barlow bold">300</p>
+                <p class="fs-9">24px/1.5rem</p>
+              </div>
+              <div class="spacing-24px">
+                <div class="spacing-block bg-white"></div>
+              </div>
+            </div>
+            <div class="system-spacing-card flex column">
+              <div class="flex">
+                <p class="fs-9 ff-barlow bold">200</p>
+                <p class="fs-9">16px/1rem</p>
+              </div>
+              <div class="spacing-16px">
+                <div class="spacing-block bg-white"></div>
+              </div>
+            </div>
+            <div class="system-spacing-card flex column">
+              <div class="flex">
+                <p class="fs-9 ff-barlow bold">150</p>
+                <p class="fs-9">12px/0.75rem</p>
+              </div>
+              <div class="spacing-12px">
+                <div class="spacing-block bg-white"></div>
+              </div>
+            </div>
+            <div class="system-spacing-card flex column">
+              <div class="flex">
+                <p class="fs-9 ff-barlow bold">100</p>
+                <p class="fs-9">8px/0.5rem</p>
+              </div>
+              <div class="spacing-8px">
+                <div class="spacing-block bg-white"></div>
+              </div>
+            </div>
+            <div class="system-spacing-card flex column">
+              <div class="flex">
+                <p class="fs-9 ff-barlow bold">50px</p>
+                <p class="fs-9">4px/0.25rem</p>
+              </div>
+              <div class="spacing-4px">
+                <div class="spacing-block bg-white"></div>
+              </div>
+            </div>
+            <div class="system-spacing-card flex column">
+              <div class="flex">
+                <p class="fs-9 ff-barlow bold">25</p>
+                <p class="fs-9">2px/0.125rem</p>
+              </div>
+              <div class="spacing-2px">
+                <div class="spacing-block bg-white"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="system-footer">
+        <img
+          class="system-footer-image"
+          src="../assets/crew/background-crew-desktop.jpg"
+        />
+      </section>
+    </div>
+  </body>
+</html>
