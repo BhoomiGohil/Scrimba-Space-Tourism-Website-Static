@@ -142,20 +142,20 @@ select {
   flex-direction: column;
 }
 
-.justify-center {
-  justify-content: center;
-}
-
-.justify-between {
-  justify-content: space-between;
-}
-
 .justify-start {
   justify-content: start;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .justify-end {
   justify-content: end;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .align-start {
@@ -335,14 +335,16 @@ select {
 
 /* Components */
 
+.logo {
+  width: 3rem;
+  height: 3rem;
+}
+
 .navigation {
   height: auto;
   margin-top: 2.5rem;
-  gap: 0;
-}
-
-.navigation-logo {
   padding-left: 4rem;
+  gap: 0;
 }
 
 .navigation-divider {
@@ -360,7 +362,6 @@ select {
 .navigation-menu {
   height: 6rem;
   gap: 0.75rem;
-  color: hsl(var(--clr-white));
   text-decoration: none;
   border-bottom: 0.188rem solid transparent;
 }
@@ -382,7 +383,12 @@ select {
 }
 
 .navigation-mobile-menu-close {
+  width: 24px;
+  height: 24px;
   display: none;
+  align-self: end;
+  margin-right: 2rem;
+  margin-bottom: 5rem;
 }
 
 .tabs-menu-container {
@@ -392,7 +398,6 @@ select {
 .tabs-menu {
   width: auto;
   height: 2.5rem;
-  color: hsl(var(--clr-white));
   text-decoration: none;
   border-bottom: 0.188rem solid transparent;
   gap: 0.5rem;
@@ -414,24 +419,15 @@ select {
   width: 17rem;
   height: 17rem;
   padding: 0;
-  position: relative;
-  border: none;
+  text-align: center;
   border-radius: 100%;
-  cursor: pointer;
+  transition: box-shadow 500ms linear;
 }
 
-.button span {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  border: 5.5rem solid transparent;
-  border-radius: 100%;
-  box-sizing: content-box;
-}
-
-.button:hover > span {
+.button:hover,
+.button:focus {
+  box-shadow: 0 0 0 5.5rem hsl(var(--clr-white) / 0.1);
   color: hsl(var(--clr-dark) / 0.5);
-  border-color: hsl(var(--clr-white) / 0.1);
 }
 
 .small-pagination {
@@ -493,10 +489,8 @@ select {
 
   .navigation {
     margin: 0rem;
-  }
-
-  .navigation-logo {
-    padding: 0 2.5rem;
+    padding: 0;
+    gap: 2.5rem;
   }
 
   .navigation-divider {
@@ -543,11 +537,13 @@ select {
     font-size: var(--fs-9-mb);
   }
 
-  .navigation {
-    height: auto;
+  .logo {
+    width: 2.5rem;
+    height: 2.5rem;
   }
 
-  .navigation-logo {
+  .navigation {
+    height: auto;
     padding: 0 1.5rem;
   }
 
@@ -575,9 +571,6 @@ select {
 
   .navigation-mobile-menu-close {
     display: flex;
-    justify-content: flex-end;
-    padding: 0 2rem;
-    margin-bottom: 5rem;
   }
 
   .button {
@@ -586,8 +579,9 @@ select {
     font-size: var(--fs-9);
   }
 
-  .button span {
-    border: 4rem solid transparent;
+  .button:hover,
+  .button:focus {
+    box-shadow: 0 0 0 4rem hsl(var(--clr-white) / 0.1);
   }
 
   .large-pagination {

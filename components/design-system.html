@@ -17,24 +17,12 @@
     <div class="main">
       <div class="container">
         <!-- Design System Title Section-->
-        <section id="system-title" class="flex justify-between align-center">
-          <div class="flex" id="logo">
-            <svg
-              width="3rem"
-              height="3rem"
-              viewBox="0 0 48 48"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx="24" cy="24" r="24" fill="white" />
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M24 0C24 0 24 24 0 24C23.5776 24.1714 24 48 24 48C24 48 24 24 48 24C24 24 24 0 24 0Z"
-                fill="#0B0D17"
-              />
-            </svg>
-          </div>
+        <section class="system-section flex justify-between">
+          <img
+            class="logo"
+            src="../assets/shared/logo.svg"
+            alt="Logo of the site"
+          />
           <h6
             class="ff-barlow-cond normal uppercase letter-spacing-4"
             style="font-size: 1.5rem"
@@ -43,16 +31,14 @@
           </h6>
         </section>
         <!-- Design System Color Section-->
-        <section id="colors" class="system-section flex column">
+        <section class="system-section flex column">
           <h5 class="numbered-title"><span>01</span> Colors</h5>
           <div class="system-color-container flex column">
             <p class="fs-9 bold">Blue</p>
             <div class="divider-white"></div>
             <div class="system-color-cards grid">
               <div class="flex column">
-                <div
-                  class="system-color-bg-card bg-dark flex column border-light"
-                >
+                <div class="system-color-bg-card bg-dark flex column">
                   <h6
                     class="system-color-code ff-bellefair uppercase text-white"
                     style="font-size: 1.5rem"
@@ -78,9 +64,7 @@
                 </div>
               </div>
               <div class="flex column">
-                <div
-                  class="system-color-bg-card bg-light flex column border-light"
-                >
+                <div class="system-color-bg-card bg-light flex column">
                   <h6
                     class="system-color-code ff-bellefair uppercase text-dark"
                     style="font-size: 1.5rem"
@@ -112,9 +96,7 @@
             <div class="divider-white"></div>
             <div class="system-color-cards grid">
               <div class="flex column">
-                <div
-                  class="system-color-bg-card bg-white flex column border-light"
-                >
+                <div class="system-color-bg-card bg-white flex column">
                   <h6
                     class="system-color-code ff-bellefair uppercase text-dark"
                     style="font-size: 1.5rem"
@@ -143,7 +125,7 @@
           </div>
         </section>
         <!-- Design System Typography Section-->
-        <section id="typography" class="system-section flex column">
+        <section class="system-section flex column">
           <h5 class="numbered-title"><span>02</span> Typography</h5>
           <div class="system-typography-container grid">
             <div class="system-typography-cards flex column">
@@ -265,7 +247,7 @@
           </div>
         </section>
         <!-- Design System Spacing Section-->
-        <section id="spacing" class="system-section flex column">
+        <section class="system-section flex column">
           <h5 class="numbered-title"><span>03</span> Spacing</h5>
           <div class="system-spacing-container flex wrap">
             <div class="system-spacing-card flex column">
@@ -388,6 +370,7 @@
           </div>
         </section>
       </div>
+      <!-- Design System Footer Section-->
       <section class="system-footer">
         <img
           class="system-footer-image"

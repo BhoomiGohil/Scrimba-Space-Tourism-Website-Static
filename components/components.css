@@ -30,10 +30,8 @@
 
 .navigation.tablet {
   margin: 0rem;
-}
-
-.navigation-logo.tablet {
-  padding: 0 2.5rem;
+  padding: 0;
+  gap: 2.5rem;
 }
 
 .navigation-divider.tablet {
@@ -48,10 +46,12 @@
 
 .navigation.mobile {
   height: auto;
+  padding: 0 1.5rem;
 }
 
-.navigation-logo.mobile {
-  padding: 0 1.5rem;
+.logo.mobile {
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 .navigation-divider.mobile {
@@ -90,9 +90,6 @@
 
 .navigation-mobile-menu-close.mobile {
   display: flex;
-  justify-content: flex-end;
-  padding: 0 2rem;
-  margin-bottom: 5rem;
 }
 
 .tabs-states {
@@ -106,15 +103,12 @@
 .button.mobile {
   width: 9rem;
   height: 9rem;
+  font-size: var(--fs-9);
 }
 
-.button.mobile span {
-  border: 4rem solid transparent;
-}
-
-.button.mobile:hover > span {
-  color: hsl(var(--clr-dark) / 0.5);
-  border-color: hsl(var(--clr-white) / 0.1);
+.button.mobile:hover,
+.button.mobile:focus {
+  box-shadow: 0 0 0 4rem hsl(var(--clr-white) / 0.1);
 }
 
 .pagination-states {

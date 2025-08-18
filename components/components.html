@@ -21,7 +21,7 @@
         <div class="component-container flex column">
           <h3 class="fs-3 ff-bellefair uppercase">Single Components</h3>
 
-          <div class="logo flex">
+          <div class="flex column">
             <!-- 
             *****
             *****
@@ -30,22 +30,11 @@
             *****
             -->
             <!-- **************************** Start Logo Component **************************** -->
-            <svg
-              id="logo"
-              width="3rem"
-              height="3rem"
-              viewBox="0 0 48 48"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx="24" cy="24" r="24" fill="white" />
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M24 0C24 0 24 24 0 24C23.5776 24.1714 24 48 24 48C24 48 24 24 48 24C24 24 24 0 24 0Z"
-                fill="#0B0D17"
-              />
-            </svg>
+            <img
+              class="logo"
+              src="../assets/shared/logo.svg"
+              alt="Logo of the site"
+            />
             <!-- **************************** End Logo Component ****************************-->
             <!-- 
             *****
@@ -67,7 +56,7 @@
               -->
               <!-- **************************** Start Navigation Menu Component **************************** -->
               <a
-                class="navigation-menu flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase"
+                class="navigation-menu flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
                 href="../index.html"
               >
                 <span class="bold letter-spacing-207"> 00 </span>
@@ -83,52 +72,52 @@
               -->
 
               <a
-                class="navigation-menu flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase"
+                class="navigation-menu flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
                 href="../index.html"
                 style="border-color: hsl(var(--clr-white) / 0.5)"
               >
                 <span class="bold letter-spacing-207"> 00 </span>
-                Menu
+                Menu - Hover
               </a>
               <a
-                class="navigation-menu flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase"
+                class="navigation-menu flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
                 href="../index.html"
                 style="border-color: hsl(var(--clr-white))"
               >
                 <span class="bold letter-spacing-207"> 00 </span>
-                Menu
+                Menu - Active
               </a>
             </div>
             <div
               class="navigation-state flex column justify-center align-center"
             >
               <a
-                class="navigation-menu mobile flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase"
+                class="navigation-menu mobile flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
                 href="../index.html"
               >
                 <span class="bold letter-spacing-207"> 00 </span>
                 Menu
               </a>
               <a
-                class="navigation-menu mobile flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase"
+                class="navigation-menu mobile flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
                 href="../index.html"
                 style="border-color: hsl(var(--clr-white) / 0.5)"
               >
                 <span class="bold letter-spacing-207"> 00 </span>
-                Menu
+                Menu - Hover
               </a>
               <a
-                class="navigation-menu mobile flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase"
+                class="navigation-menu mobile flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
                 href="../index.html"
                 style="border-color: hsl(var(--clr-white))"
               >
                 <span class="bold letter-spacing-207"> 00 </span>
-                Menu
+                Menu - Active
               </a>
             </div>
           </div>
 
-          <div class="tabs-states flex justify-center">
+          <div class="tabs-states flex column">
             <div
               class="tabs-menu-container flex justify-center align-center"
               style="gap: 3.938rem"
@@ -142,7 +131,7 @@
               -->
               <!-- **************************** Start Tabs Menu Component **************************** -->
               <a
-                class="tabs-menu flex fs-8 ff-barlow-cond letter-spacing-2 uppercase"
+                class="tabs-menu flex fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
                 href="../index.html"
               >
                 Tabs Menu
@@ -157,18 +146,18 @@
               -->
 
               <a
-                class="tabs-menu flex fs-8 ff-barlow-cond letter-spacing-2 uppercase"
+                class="tabs-menu flex fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
                 href="../index.html"
                 style="border-color: hsl(var(--clr-white) / 0.5)"
               >
-                Tabs Menu
+                Tabs Menu - Hover
               </a>
               <a
-                class="tabs-menu flex fs-8 ff-barlow-cond letter-spacing-2 uppercase"
+                class="tabs-menu flex fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
                 href="../index.html"
                 style="border-color: hsl(var(--clr-white))"
               >
-                Tabs Menu
+                Tabs Menu - Active
               </a>
             </div>
           </div>
@@ -182,12 +171,11 @@
             *****
             -->
             <!-- **************************** Start Button Component **************************** -->
-            <button class="button flex justify-center align-center bg-white">
-              <span
-                class="flex justify-center align-center fs-4 ff-bellefair text-dark uppercase"
-                >Explore</span
-              >
-            </button>
+            <a
+              class="button flex justify-center align-center bg-white fs-4 ff-bellefair text-dark uppercase"
+            >
+              Explore
+            </a>
             <!-- **************************** End Button Component **************************** -->
             <!-- 
             *****
@@ -197,39 +185,32 @@
             *****
             -->
 
-            <button class="button flex justify-center align-center bg-white">
-              <span
-                class="flex justify-center align-center fs-4 ff-bellefair text-dark uppercase"
-                style="
-                  color: hsl(var(--clr-dark) / 0.5);
-                  border-color: hsl(var(--clr-white) / 0.1);
-                "
-                >Explore</span
-              >
-            </button>
+            <a
+              class="button flex justify-center align-center bg-white fs-4 ff-bellefair text-dark uppercase"
+              style="
+                box-shadow: 0 0 0 5.5rem hsl(var(--clr-white) / 0.1);
+                color: hsl(var(--clr-dark) / 0.5);
+              "
+            >
+              Explore - Hover
+            </a>
           </div>
 
           <div class="button-states flex justify-center">
-            <button
-              class="button mobile flex justify-center align-center bg-white"
+            <a
+              class="button mobile flex justify-center align-center bg-white fs-9 ff-bellefair text-dark uppercase"
             >
-              <span
-                class="flex justify-center align-center fs-9 ff-bellefair text-dark uppercase"
-                >Explore</span
-              >
-            </button>
-            <button
-              class="button mobile flex justify-center align-center bg-white"
+              Explore - Mobile
+            </a>
+            <a
+              class="button mobile flex justify-center align-center bg-white fs-9 ff-bellefair text-dark uppercase"
+              style="
+                box-shadow: 0 0 0 4rem hsl(var(--clr-white) / 0.1);
+                color: hsl(var(--clr-dark) / 0.5);
+              "
             >
-              <span
-                class="flex justify-center align-center fs-9 ff-bellefair text-dark uppercase"
-                style="
-                  color: hsl(var(--clr-dark) / 0.5);
-                  border-color: hsl(var(--clr-white) / 0.1);
-                "
-                >Explore</span
-              >
-            </button>
+              Explore - Mobile Hover
+            </a>
           </div>
 
           <div class="pagination-states grid">
@@ -343,67 +324,33 @@
             -->
             <!-- **************************** Start Whole Navigation Component **************************** -->
             <div class="navigation flex align-center justify-between">
-              <div id="logo" class="navigation-logo flex">
-                <svg
-                  width="3rem"
-                  height="3rem"
-                  viewBox="0 0 48 48"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle cx="24" cy="24" r="24" fill="white" />
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M24 0C24 0 24 24 0 24C23.5776 24.1714 24 48 24 48C24 48 24 24 48 24C24 24 24 0 24 0Z"
-                    fill="#0B0D17"
-                  />
-                </svg>
-              </div>
+              <img
+                class="logo"
+                src="../assets/shared/logo.svg"
+                alt="Logo of the site"
+              />
               <div class="navigation-divider divider-white"></div>
               <div class="navigation-menu-container flex align-center">
-                <div class="navigation-mobile-menu-close flex">
-                  <svg
-                    width="24"
-                    height="21"
-                    viewBox="0 0 24 21"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect
-                      x="4.5752"
-                      y="0.954102"
-                      width="24"
-                      height="3"
-                      transform="rotate(45 4.5752 0.954102)"
-                      fill="#D0D6F9"
-                    />
-                    <rect
-                      x="2.4541"
-                      y="17.9246"
-                      width="24"
-                      height="3"
-                      transform="rotate(-45 2.4541 17.9246)"
-                      fill="#D0D6F9"
-                    />
-                  </svg>
-                </div>
+                <img
+                  src="../assets/shared/icon-close.svg"
+                  class="navigation-mobile-menu-close flex"
+                />
                 <a
-                  class="navigation-menu flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase"
+                  class="navigation-menu flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
                   href="../index.html"
                 >
                   <span class="bold letter-spacing-207"> 00 </span>
                   Home
                 </a>
                 <a
-                  class="navigation-menu flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase"
+                  class="navigation-menu flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
                   href="../index.html"
                 >
                   <span class="bold letter-spacing-207"> 01 </span>
                   Destination
                 </a>
                 <a
-                  class="navigation-menu flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase"
+                  class="navigation-menu flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
                   href="../index.html"
                 >
                   <span class="bold letter-spacing-207"> 02 </span>
@@ -417,39 +364,10 @@
                   Technology
                 </a>
               </div>
-              <div class="navigation-mobile-menu">
-                <svg
-                  width="24"
-                  height="22"
-                  viewBox="0 0 24 22"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g id="menu">
-                    <rect
-                      id="Rectangle"
-                      y="0.5"
-                      width="24"
-                      height="3"
-                      fill="#D0D6F9"
-                    />
-                    <rect
-                      id="Rectangle Copy"
-                      y="9.5"
-                      width="24"
-                      height="3"
-                      fill="#D0D6F9"
-                    />
-                    <rect
-                      id="Rectangle Copy 2"
-                      y="18.5"
-                      width="24"
-                      height="3"
-                      fill="#D0D6F9"
-                    />
-                  </g>
-                </svg>
-              </div>
+              <img
+                src="../assets/shared/icon-hamburger.svg"
+                class="navigation-mobile-menu"
+              />
             </div>
             <!-- **************************** End Whole Navigation Component **************************** -->
             <!-- 
@@ -463,51 +381,17 @@
 
           <div class="navigation-container flex column">
             <div class="navigation tablet flex align-center justify-between">
-              <div id="logo" class="navigation-logo tablet flex">
-                <svg
-                  width="3rem"
-                  height="3rem"
-                  viewBox="0 0 48 48"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle cx="24" cy="24" r="24" fill="white" />
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M24 0C24 0 24 24 0 24C23.5776 24.1714 24 48 24 48C24 48 24 24 48 24C24 24 24 0 24 0Z"
-                    fill="#0B0D17"
-                  />
-                </svg>
-              </div>
+              <img
+                class="logo"
+                src="../assets/shared/logo.svg"
+                alt="Logo of the site"
+              />
               <div class="navigation-divider tablet divider-white"></div>
               <div class="navigation-menu-container tablet flex align-center">
-                <div class="navigation-mobile-menu-close flex">
-                  <svg
-                    width="24"
-                    height="21"
-                    viewBox="0 0 24 21"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect
-                      x="4.5752"
-                      y="0.954102"
-                      width="24"
-                      height="3"
-                      transform="rotate(45 4.5752 0.954102)"
-                      fill="#D0D6F9"
-                    />
-                    <rect
-                      x="2.4541"
-                      y="17.9246"
-                      width="24"
-                      height="3"
-                      transform="rotate(-45 2.4541 17.9246)"
-                      fill="#D0D6F9"
-                    />
-                  </svg>
-                </div>
+                <img
+                  src="../assets/shared/icon-close.svg"
+                  class="navigation-mobile-menu-close flex"
+                />
                 <a
                   class="navigation-menu flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase"
                   href="../index.html"
@@ -537,88 +421,25 @@
                   Technology
                 </a>
               </div>
-              <div class="navigation-mobile-menu">
-                <svg
-                  width="24"
-                  height="22"
-                  viewBox="0 0 24 22"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g id="menu">
-                    <rect
-                      id="Rectangle"
-                      y="0.5"
-                      width="24"
-                      height="3"
-                      fill="#D0D6F9"
-                    />
-                    <rect
-                      id="Rectangle Copy"
-                      y="9.5"
-                      width="24"
-                      height="3"
-                      fill="#D0D6F9"
-                    />
-                    <rect
-                      id="Rectangle Copy 2"
-                      y="18.5"
-                      width="24"
-                      height="3"
-                      fill="#D0D6F9"
-                    />
-                  </g>
-                </svg>
-              </div>
+              <img
+                src="../assets/shared/icon-hamburger.svg"
+                class="navigation-mobile-menu"
+              />
             </div>
           </div>
           <div class="navigation-container flex column">
             <div class="navigation mobile flex align-center justify-between">
-              <div id="logo" class="navigation-logo mobile flex align-center">
-                <svg
-                  width="3rem"
-                  height="3rem"
-                  viewBox="0 0 48 48"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle cx="24" cy="24" r="24" fill="white" />
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M24 0C24 0 24 24 0 24C23.5776 24.1714 24 48 24 48C24 48 24 24 48 24C24 24 24 0 24 0Z"
-                    fill="#0B0D17"
-                  />
-                </svg>
-              </div>
+              <img
+                class="logo mobile"
+                src="../assets/shared/logo.svg"
+                alt="Logo of the site"
+              />
               <div class="navigation-divider mobile divider-white"></div>
               <div class="navigation-menu-container mobile flex">
-                <div class="navigation-mobile-menu-close mobile flex">
-                  <svg
-                    width="24"
-                    height="21"
-                    viewBox="0 0 24 21"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect
-                      x="4.5752"
-                      y="0.954102"
-                      width="24"
-                      height="3"
-                      transform="rotate(45 4.5752 0.954102)"
-                      fill="#D0D6F9"
-                    />
-                    <rect
-                      x="2.4541"
-                      y="17.9246"
-                      width="24"
-                      height="3"
-                      transform="rotate(-45 2.4541 17.9246)"
-                      fill="#D0D6F9"
-                    />
-                  </svg>
-                </div>
+                <img
+                  src="../assets/shared/icon-close.svg"
+                  class="navigation-mobile-menu-close mobile flex"
+                />
                 <a
                   class="navigation-menu mobile flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase"
                   href="../index.html"
@@ -648,39 +469,10 @@
                   Technology
                 </a>
               </div>
-              <div class="navigation-mobile-menu mobile">
-                <svg
-                  width="24"
-                  height="22"
-                  viewBox="0 0 24 22"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g id="menu">
-                    <rect
-                      id="Rectangle"
-                      y="0.5"
-                      width="24"
-                      height="3"
-                      fill="#D0D6F9"
-                    />
-                    <rect
-                      id="Rectangle Copy"
-                      y="9.5"
-                      width="24"
-                      height="3"
-                      fill="#D0D6F9"
-                    />
-                    <rect
-                      id="Rectangle Copy 2"
-                      y="18.5"
-                      width="24"
-                      height="3"
-                      fill="#D0D6F9"
-                    />
-                  </g>
-                </svg>
-              </div>
+              <img
+                src="../assets/shared/icon-hamburger.svg"
+                class="navigation-mobile-menu mobile"
+              />
             </div>
           </div>
 
@@ -702,26 +494,26 @@
               <!-- **************************** Start Whole Tabs Component **************************** -->
               <div class="tabs-menu-container flex justify-center align-center">
                 <a
-                  class="tabs-menu flex fs-8 ff-barlow-cond letter-spacing-2 uppercase"
+                  class="tabs-menu flex fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
                   href="../index.html"
                   style="border-color: hsl(var(--clr-white))"
                 >
                   Moon
                 </a>
                 <a
-                  class="tabs-menu flex fs-8 ff-barlow-cond letter-spacing-2 uppercase"
+                  class="tabs-menu flex fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
                   href="../index.html"
                 >
                   Mars
                 </a>
                 <a
-                  class="tabs-menu flex fs-8 ff-barlow-cond letter-spacing-2 uppercase"
+                  class="tabs-menu flex fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
                   href="../index.html"
                 >
                   Europa
                 </a>
                 <a
-                  class="tabs-menu flex fs-8 ff-barlow-cond letter-spacing-2 uppercase"
+                  class="tabs-menu flex fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
                   href="../index.html"
                 >
                   Titan
@@ -738,13 +530,13 @@
 
               <div class="tabs-menu-container flex justify-center align-center">
                 <a
-                  class="tabs-menu flex fs-8 ff-barlow-cond letter-spacing-2 uppercase"
+                  class="tabs-menu flex fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
                   href="../index.html"
                 >
                   Moon
                 </a>
                 <a
-                  class="tabs-menu flex fs-8 ff-barlow-cond letter-spacing-2 uppercase"
+                  class="tabs-menu flex fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
                   href="../index.html"
                   style="border-color: hsl(var(--clr-white))"
                 >
@@ -757,7 +549,7 @@
                   Europa
                 </a>
                 <a
-                  class="tabs-menu flex fs-8 ff-barlow-cond letter-spacing-2 uppercase"
+                  class="tabs-menu flex fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
                   href="../index.html"
                 >
                   Titan
@@ -765,13 +557,13 @@
               </div>
               <div class="tabs-menu-container flex justify-center align-center">
                 <a
-                  class="tabs-menu flex fs-8 ff-barlow-cond letter-spacing-2 uppercase"
+                  class="tabs-menu flex fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
                   href="../index.html"
                 >
                   Moon
                 </a>
                 <a
-                  class="tabs-menu flex fs-8 ff-barlow-cond letter-spacing-2 uppercase"
+                  class="tabs-menu flex fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
                   href="../index.html"
                 >
                   Mars
@@ -784,7 +576,7 @@
                   Europa
                 </a>
                 <a
-                  class="tabs-menu flex fs-8 ff-barlow-cond letter-spacing-2 uppercase"
+                  class="tabs-menu flex fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
                   href="../index.html"
                 >
                   Titan
@@ -792,7 +584,7 @@
               </div>
               <div class="tabs-menu-container flex justify-center align-center">
                 <a
-                  class="tabs-menu flex fs-8 ff-barlow-cond letter-spacing-2 uppercase"
+                  class="tabs-menu flex fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
                   href="../index.html"
                 >
                   Moon
@@ -804,13 +596,13 @@
                   Mars
                 </a>
                 <a
-                  class="tabs-menu flex fs-8 ff-barlow-cond letter-spacing-2 uppercase"
+                  class="tabs-menu flex fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
                   href="../index.html"
                 >
                   Europa
                 </a>
                 <a
-                  class="tabs-menu flex fs-8 ff-barlow-cond letter-spacing-2 uppercase"
+                  class="tabs-menu flex fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
                   href="../index.html"
                   style="border-color: hsl(var(--clr-white))"
                 >
@@ -825,105 +617,110 @@
             >
               <div class="tabs-menu-container flex justify-center align-center">
                 <a
-                  class="tabs-menu flex"
+                  class="tabs-menu flex fs-7 ff-barlow-cond letter-spacing-2 uppercase text-white"
                   href="../index.html"
                   style="border-color: hsl(var(--clr-white))"
                 >
-                  <p class="fs-7 ff-barlow-cond letter-spacing-2 uppercase">
-                    Moon
-                  </p>
+                  Moon
                 </a>
-                <a class="tabs-menu flex" href="../index.html">
-                  <p class="fs-7 ff-barlow-cond letter-spacing-2 uppercase">
-                    Mars
-                  </p>
+                <a
+                  class="tabs-menu flex fs-7 ff-barlow-cond letter-spacing-2 uppercase text-white"
+                  href="../index.html"
+                >
+                  Mars
                 </a>
-                <a class="tabs-menu flex" href="../index.html">
-                  <p class="fs-7 ff-barlow-cond letter-spacing-2 uppercase">
-                    Europa
-                  </p> </a
-                ><a class="tabs-menu flex" href="../index.html">
-                  <p class="fs-7 ff-barlow-cond letter-spacing-2 uppercase">
-                    Europa
-                  </p>
+                <a
+                  class="tabs-menu flex fs-7 ff-barlow-cond letter-spacing-2 uppercase text-white"
+                  href="../index.html"
+                >
+                  Europa
+                </a>
+                <a
+                  class="tabs-menu flex fs-7 ff-barlow-cond letter-spacing-2 uppercase text-white"
+                  href="../index.html"
+                >
+                  Titan
                 </a>
               </div>
               <div class="tabs-menu-container flex justify-center align-center">
-                <a class="tabs-menu flex" href="../index.html">
-                  <p class="fs-7 ff-barlow-cond letter-spacing-2 uppercase">
-                    Moon
-                  </p>
+                <a
+                  class="tabs-menu flex fs-7 ff-barlow-cond letter-spacing-2 uppercase text-white"
+                  href="../index.html"
+                >
+                  Moon
                 </a>
                 <a
-                  class="tabs-menu flex"
+                  class="tabs-menu flex fs-7 ff-barlow-cond letter-spacing-2 uppercase text-white"
                   href="../index.html"
                   style="border-color: hsl(var(--clr-white))"
                 >
-                  <p class="fs-7 ff-barlow-cond letter-spacing-2 uppercase">
-                    Mars
-                  </p>
+                  Mars
                 </a>
-                <a class="tabs-menu flex" href="../index.html">
-                  <p class="fs-7 ff-barlow-cond letter-spacing-2 uppercase">
-                    Europa
-                  </p>
+                <a
+                  class="tabs-menu flex fs-7 ff-barlow-cond letter-spacing-2 uppercase text-white"
+                  href="../index.html"
+                >
+                  Europa
                 </a>
-                <a class="tabs-menu flex" href="../index.html">
-                  <p class="fs-7 ff-barlow-cond letter-spacing-2 uppercase">
-                    Europa
-                  </p>
+                <a
+                  class="tabs-menu flex fs-7 ff-barlow-cond letter-spacing-2 uppercase text-white"
+                  href="../index.html"
+                >
+                  Titan
                 </a>
               </div>
               <div class="tabs-menu-container flex justify-center align-center">
-                <a class="tabs-menu flex" href="../index.html">
-                  <p class="fs-7 ff-barlow-cond letter-spacing-2 uppercase">
-                    Moon
-                  </p>
-                </a>
-                <a class="tabs-menu flex" href="../index.html">
-                  <p class="fs-7 ff-barlow-cond letter-spacing-2 uppercase">
-                    Mars
-                  </p>
+                <a
+                  class="tabs-menu flex fs-7 ff-barlow-cond letter-spacing-2 uppercase text-white"
+                  href="../index.html"
+                >
+                  Moon
                 </a>
                 <a
-                  class="tabs-menu flex"
+                  class="tabs-menu flex fs-7 ff-barlow-cond letter-spacing-2 uppercase text-white"
+                  href="../index.html"
+                >
+                  Mars
+                </a>
+                <a
+                  class="tabs-menu flex fs-7 ff-barlow-cond letter-spacing-2 uppercase text-white"
                   href="../index.html"
                   style="border-color: hsl(var(--clr-white))"
                 >
-                  <p class="fs-7 ff-barlow-cond letter-spacing-2 uppercase">
-                    Europa
-                  </p>
+                  Europa
                 </a>
-                <a class="tabs-menu flex" href="../index.html">
-                  <p class="fs-7 ff-barlow-cond letter-spacing-2 uppercase">
-                    Europa
-                  </p>
+                <a
+                  class="tabs-menu flex fs-7 ff-barlow-cond letter-spacing-2 uppercase text-white"
+                  href="../index.html"
+                >
+                  Titan
                 </a>
               </div>
               <div class="tabs-menu-container flex justify-center align-center">
-                <a class="tabs-menu flex" href="../index.html">
-                  <p class="fs-7 ff-barlow-cond letter-spacing-2 uppercase">
-                    Moon
-                  </p>
-                </a>
-                <a class="tabs-menu flex" href="../index.html">
-                  <p class="fs-7 ff-barlow-cond letter-spacing-2 uppercase">
-                    Mars
-                  </p>
-                </a>
-                <a class="tabs-menu flex" href="../index.html">
-                  <p class="fs-7 ff-barlow-cond letter-spacing-2 uppercase">
-                    Europa
-                  </p>
+                <a
+                  class="tabs-menu flex fs-7 ff-barlow-cond letter-spacing-2 uppercase text-white"
+                  href="../index.html"
+                >
+                  Moon
                 </a>
                 <a
-                  class="tabs-menu flex"
+                  class="tabs-menu flex fs-7 ff-barlow-cond letter-spacing-2 uppercase text-white"
+                  href="../index.html"
+                >
+                  Mars
+                </a>
+                <a
+                  class="tabs-menu flex fs-7 ff-barlow-cond letter-spacing-2 uppercase text-white"
+                  href="../index.html"
+                >
+                  Europa
+                </a>
+                <a
+                  class="tabs-menu flex fs-7 ff-barlow-cond letter-spacing-2 uppercase text-white"
                   href="../index.html"
                   style="border-color: hsl(var(--clr-white))"
                 >
-                  <p class="fs-7 ff-barlow-cond letter-spacing-2 uppercase">
-                    Europa
-                  </p>
+                  Titan
                 </a>
               </div>
             </div>
