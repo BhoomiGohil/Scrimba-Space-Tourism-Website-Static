@@ -11,14 +11,25 @@
     />
     <title>Components</title>
     <link rel="stylesheet" href="../index.css" />
-    <link rel="stylesheet" href="../components/components.css" />
+    <style>
+      .navigation-menu.mobile:hover {
+        border-right-color: hsl(var(--clr-white) / 0.5) !important;
+      }
+
+      .navigation-menu.mobile:active {
+        border-right-color: hsl(var(--clr-white)) !important;
+      }
+    </style>
   </head>
 
   <body>
     <!-- Focus on star comments to copy components as it has lot of examples. -->
     <div class="main">
       <div class="container">
-        <div class="component-container flex column">
+        <div
+          class="flex column border-light"
+          style="margin: 5rem 0; padding: 4rem; gap: 3rem"
+        >
           <h3 class="fs-3 ff-bellefair uppercase">Single Components</h3>
 
           <div class="flex column">
@@ -45,8 +56,17 @@
             -->
           </div>
 
-          <div class="navigation-states grid">
-            <div class="navigation-state flex justify-center align-center">
+          <div
+            class="grid border-light"
+            style="
+              padding: 3rem;
+              --bw: 0.1rem;
+              --bs: dotted;
+              grid-template-columns: 1fr 1fr;
+              gap: 3rem;
+            "
+          >
+            <div class="flex justify-center align-center" style="gap: 2rem">
               <!-- 
               *****
               *****
@@ -89,11 +109,19 @@
               </a>
             </div>
             <div
-              class="navigation-state flex column justify-center align-center"
+              class="flex column justify-center align-center"
+              style="gap: 2rem"
             >
               <a
                 class="navigation-menu mobile flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
                 href="../index.html"
+                style="
+                  width: 100%;
+                  height: auto;
+                  border-top: none;
+                  border-bottom: none;
+                  border-right: 0.188rem solid transparent;
+                "
               >
                 <span class="bold letter-spacing-207"> 00 </span>
                 Menu
@@ -101,7 +129,13 @@
               <a
                 class="navigation-menu mobile flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
                 href="../index.html"
-                style="border-bottom-color: hsl(var(--clr-white) / 0.5)"
+                style="
+                  width: 100%;
+                  height: auto;
+                  border-bottom: none;
+                  border-top: none;
+                  border-right: 0.188rem solid hsl(var(--clr-white) / 0.5);
+                "
               >
                 <span class="bold letter-spacing-207"> 00 </span>
                 Menu - Hover
@@ -109,7 +143,13 @@
               <a
                 class="navigation-menu mobile flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
                 href="../index.html"
-                style="border-bottom-color: hsl(var(--clr-white))"
+                style="
+                  width: 100%;
+                  height: auto;
+                  border-bottom: none;
+                  border-top: none;
+                  border-right: 0.188rem solid hsl(var(--clr-white));
+                "
               >
                 <span class="bold letter-spacing-207"> 00 </span>
                 Menu - Active
@@ -117,7 +157,10 @@
             </div>
           </div>
 
-          <div class="tabs-states flex column">
+          <div
+            class="flex column border-light"
+            style="padding: 3rem; --bw: 0.1rem; --bs: dotted; gap: 3.938rem"
+          >
             <div
               class="tabs-menu-container flex justify-center align-center"
               style="gap: 3.938rem"
@@ -162,7 +205,10 @@
             </div>
           </div>
 
-          <div class="button-states flex justify-center">
+          <div
+            class="flex justify-center border-light"
+            style="padding: 3rem; --bw: 0.1rem; --bs: dotted; gap: 16.688rem"
+          >
             <!-- 
             *****
             *****
@@ -196,15 +242,21 @@
             </a>
           </div>
 
-          <div class="button-states flex justify-center">
+          <div
+            class="flex justify-center border-light"
+            style="padding: 3rem; --bw: 0.1rem; --bs: dotted; gap: 16.688rem"
+          >
             <a
               class="button mobile flex justify-center align-center bg-white fs-9 ff-bellefair text-dark uppercase"
+              style="width: 9rem; height: 9rem"
             >
               Explore - Mobile
             </a>
             <a
               class="button mobile flex justify-center align-center bg-white fs-9 ff-bellefair text-dark uppercase"
               style="
+                width: 9rem;
+                height: 9rem;
                 box-shadow: 0 0 0 4rem hsl(var(--clr-white) / 0.1);
                 color: hsl(var(--clr-dark) / 0.5);
               "
@@ -213,7 +265,16 @@
             </a>
           </div>
 
-          <div class="pagination-states grid">
+          <div
+            class="grid border-light"
+            style="
+              grid-template-columns: 1fr 1fr;
+              gap: 5rem;
+              padding: 3rem;
+              --bw: 0.1rem;
+              --bs: dotted;
+            "
+          >
             <div class="flex justify-center" style="gap: 3.375rem">
               <!-- 
               *****
@@ -238,19 +299,31 @@
             </div>
 
             <div class="flex justify-center" style="gap: 3.375rem">
-              <a class="small-pagination tablet bg-white"></a>
               <a
                 class="small-pagination tablet bg-white"
-                style="opacity: 50.01%"
+                style="width: 0.625rem; height: 0.625rem"
               ></a>
               <a
                 class="small-pagination tablet bg-white"
-                style="opacity: 100%"
+                style="width: 0.625rem; height: 0.625rem; opacity: 50.01%"
+              ></a>
+              <a
+                class="small-pagination tablet bg-white"
+                style="width: 0.625rem; height: 0.625rem; opacity: 100%"
               ></a>
             </div>
           </div>
 
-          <div class="pagination-states grid">
+          <div
+            class="grid border-light"
+            style="
+              grid-template-columns: 1fr 1fr;
+              gap: 5rem;
+              padding: 3rem;
+              --bw: 0.1rem;
+              --bs: dotted;
+            "
+          >
             <div class="flex justify-center" style="gap: 3.375rem">
               <!-- 
               *****
@@ -292,16 +365,23 @@
             <div class="flex justify-center" style="gap: 3.375rem">
               <a
                 class="large-pagination tablet fs-6 ff-bellefair flex justify-center align-center"
-                >0
-              </a>
-              <a
-                class="large-pagination tablet fs-6 ff-bellefair flex justify-center align-center"
-                style="border-color: hsl(var(--clr-white))"
+                style="width: 3.5rem; height: 3.5rem"
                 >0
               </a>
               <a
                 class="large-pagination tablet fs-6 ff-bellefair flex justify-center align-center"
                 style="
+                  width: 3.5rem;
+                  height: 3.5rem;
+                  border-color: hsl(var(--clr-white));
+                "
+                >0
+              </a>
+              <a
+                class="large-pagination tablet fs-6 ff-bellefair flex justify-center align-center"
+                style="
+                  width: 3.5rem;
+                  height: 3.5rem;
                   color: hsl(var(--clr-dark));
                   background-color: hsl(var(--clr-white));
                   border-color: hsl(var(--clr-white));
@@ -312,9 +392,15 @@
           </div>
         </div>
 
-        <div class="component-container flex column">
+        <div
+          class="flex column border-light"
+          style="margin: 5rem 0; padding: 4rem; gap: 3rem"
+        >
           <h3 class="fs-3 ff-bellefair uppercase">Grouped Components</h3>
-          <div class="navigation-container flex column">
+          <div
+            class="navigation-container flex column border-light"
+            style="padding: 3rem; --bw: 0.1rem; --bs: dotted"
+          >
             <!-- 
             *****
             *****
@@ -379,15 +465,31 @@
             -->
           </div>
 
-          <div class="navigation-container flex column">
-            <div class="navigation tablet flex align-center justify-between">
+          <div
+            class="navigation-container flex column border-light"
+            style="padding: 3rem; --bw: 0.1rem; --bs: dotted"
+          >
+            <div
+              class="navigation tablet flex align-center justify-between"
+              style="margin: 0rem; padding: 0; gap: 2.5rem"
+            >
               <img
                 class="logo"
                 src="../assets/shared/logo.svg"
                 alt="Logo of the site"
               />
-              <div class="navigation-divider tablet divider-white"></div>
-              <div class="navigation-menu-container tablet flex align-center">
+              <div
+                class="navigation-divider tablet divider-white"
+                style="display: none"
+              ></div>
+              <div
+                class="navigation-menu-container tablet flex align-center"
+                style="
+                  justify-content: end;
+                  flex-grow: 1;
+                  padding: 0 2.5rem 0 2.5rem;
+                "
+              >
                 <img
                   src="../assets/shared/icon-close.svg"
                   class="navigation-mobile-menu-close flex"
@@ -427,22 +529,48 @@
               />
             </div>
           </div>
-          <div class="navigation-container flex column">
-            <div class="navigation mobile flex align-center justify-between">
+          <div
+            class="navigation-container flex column border-light"
+            style="padding: 3rem; --bw: 0.1rem; --bs: dotted"
+          >
+            <div
+              class="navigation mobile flex align-center justify-between"
+              style="height: auto; padding: 0 1.5rem"
+            >
               <img
                 class="logo mobile"
                 src="../assets/shared/logo.svg"
                 alt="Logo of the site"
+                style="width: 2.5rem; height: 2.5rem"
               />
-              <div class="navigation-divider mobile divider-white"></div>
-              <div class="navigation-menu-container mobile flex">
+              <div
+                class="navigation-divider mobile divider-white"
+                style="display: none"
+              ></div>
+              <div
+                class="navigation-menu-container mobile flex"
+                style="
+                  width: 80%;
+                  flex-direction: column;
+                  padding: 2rem 0 2rem 2rem;
+                  gap: 2rem;
+                "
+              >
                 <img
                   src="../assets/shared/icon-close.svg"
                   class="navigation-mobile-menu-close mobile flex"
+                  style="display: flex"
                 />
                 <a
                   class="navigation-menu mobile flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase"
                   href="../index.html"
+                  style="
+                    width: 100%;
+                    height: auto;
+                    border-bottom: none;
+                    border-top: none;
+                    border-right: 0.188rem solid transparent;
+                  "
                 >
                   <span class="bold letter-spacing-207"> 00 </span>
                   Home
@@ -450,6 +578,13 @@
                 <a
                   class="navigation-menu mobile flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase"
                   href="../index.html"
+                  style="
+                    width: 100%;
+                    height: auto;
+                    border-bottom: none;
+                    border-top: none;
+                    border-right: 0.188rem solid transparent;
+                  "
                 >
                   <span class="bold letter-spacing-207"> 01 </span>
                   Destination
@@ -457,6 +592,13 @@
                 <a
                   class="navigation-menu mobile flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase"
                   href="../index.html"
+                  style="
+                    width: 100%;
+                    height: auto;
+                    border-bottom: none;
+                    border-top: none;
+                    border-right: 0.188rem solid transparent;
+                  "
                 >
                   <span class="bold letter-spacing-207"> 02 </span>
                   Crew
@@ -464,6 +606,13 @@
                 <a
                   class="navigation-menu mobile flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase"
                   href="../index.html"
+                  style="
+                    width: 100%;
+                    height: auto;
+                    border-bottom: none;
+                    border-top: none;
+                    border-right: 0.188rem solid transparent;
+                  "
                 >
                   <span class="bold letter-spacing-207"> 03 </span>
                   Technology
@@ -472,13 +621,20 @@
               <img
                 src="../assets/shared/icon-hamburger.svg"
                 class="navigation-mobile-menu mobile"
+                style="display: block"
               />
             </div>
           </div>
 
           <div
-            class="tabs-states flex row align-center"
-            style="justify-content: space-around"
+            class="flex row align-center border-light"
+            style="
+              justify-content: space-around;
+              padding: 3rem;
+              --bw: 0.1rem;
+              --bs: dotted;
+              gap: 3.938rem;
+            "
           >
             <div
               class="flex column justify-center align-center"
@@ -726,7 +882,16 @@
             </div>
           </div>
 
-          <div class="pagination-states grid">
+          <div
+            class="grid border-light"
+            style="
+              grid-template-columns: 1fr 1fr;
+              gap: 5rem;
+              padding: 3rem;
+              --bw: 0.1rem;
+              --bs: dotted;
+            "
+          >
             <div class="flex column justify-center" style="gap: 3.375rem">
               <!-- 
               *****
@@ -775,43 +940,88 @@
               <div class="flex justify-center" style="gap: 3.375rem">
                 <a
                   class="small-pagination tablet bg-white"
-                  style="opacity: 100%"
+                  style="width: 0.625rem; height: 0.625rem; opacity: 100%"
                 ></a>
-                <a class="small-pagination tablet bg-white"></a>
-                <a class="small-pagination tablet bg-white"></a>
-                <a class="small-pagination tablet bg-white"></a>
-              </div>
-              <div class="flex justify-center" style="gap: 3.375rem">
-                <a class="small-pagination tablet bg-white"></a>
                 <a
                   class="small-pagination tablet bg-white"
-                  style="opacity: 100%"
+                  style="width: 0.625rem; height: 0.625rem"
                 ></a>
-                <a class="small-pagination tablet bg-white"></a>
-                <a class="small-pagination tablet bg-white"></a>
-              </div>
-              <div class="flex justify-center" style="gap: 3.375rem">
-                <a class="small-pagination tablet bg-white"></a>
-                <a class="small-pagination tablet bg-white"></a>
                 <a
                   class="small-pagination tablet bg-white"
-                  style="opacity: 100%"
+                  style="width: 0.625rem; height: 0.625rem"
                 ></a>
-                <a class="small-pagination tablet bg-white"></a>
-              </div>
-              <div class="flex justify-center" style="gap: 3.375rem">
-                <a class="small-pagination tablet bg-white"></a>
-                <a class="small-pagination tablet bg-white"></a>
-                <a class="small-pagination tablet bg-white"></a>
                 <a
                   class="small-pagination tablet bg-white"
-                  style="opacity: 100%"
+                  style="width: 0.625rem; height: 0.625rem"
+                ></a>
+              </div>
+              <div class="flex justify-center" style="gap: 3.375rem">
+                <a
+                  class="small-pagination tablet bg-white"
+                  style="width: 0.625rem; height: 0.625rem"
+                ></a>
+                <a
+                  class="small-pagination tablet bg-white"
+                  style="width: 0.625rem; height: 0.625rem; opacity: 100%"
+                ></a>
+                <a
+                  class="small-pagination tablet bg-white"
+                  style="width: 0.625rem; height: 0.625rem"
+                ></a>
+                <a
+                  class="small-pagination tablet bg-white"
+                  style="width: 0.625rem; height: 0.625rem"
+                ></a>
+              </div>
+              <div class="flex justify-center" style="gap: 3.375rem">
+                <a
+                  class="small-pagination tablet bg-white"
+                  style="width: 0.625rem; height: 0.625rem"
+                ></a>
+                <a
+                  class="small-pagination tablet bg-white"
+                  style="width: 0.625rem; height: 0.625rem"
+                ></a>
+                <a
+                  class="small-pagination tablet bg-white"
+                  style="width: 0.625rem; height: 0.625rem; opacity: 100%"
+                ></a>
+                <a
+                  class="small-pagination tablet bg-white"
+                  style="width: 0.625rem; height: 0.625rem"
+                ></a>
+              </div>
+              <div class="flex justify-center" style="gap: 3.375rem">
+                <a
+                  class="small-pagination tablet bg-white"
+                  style="width: 0.625rem; height: 0.625rem"
+                ></a>
+                <a
+                  class="small-pagination tablet bg-white"
+                  style="width: 0.625rem; height: 0.625rem"
+                ></a>
+                <a
+                  class="small-pagination tablet bg-white"
+                  style="width: 0.625rem; height: 0.625rem"
+                ></a>
+                <a
+                  class="small-pagination tablet bg-white"
+                  style="width: 0.625rem; height: 0.625rem; opacity: 100%"
                 ></a>
               </div>
             </div>
           </div>
 
-          <div class="pagination-states grid">
+          <div
+            class="grid border-light"
+            style="
+              grid-template-columns: 1fr 1fr;
+              gap: 5rem;
+              padding: 3rem;
+              --bw: 0.1rem;
+              --bs: dotted;
+            "
+          >
             <div class="flex column justify-center" style="gap: 3.375rem">
               <!-- 
               *****
@@ -894,6 +1104,8 @@
                 <a
                   class="large-pagination tablet fs-6 ff-bellefair flex justify-center align-center"
                   style="
+                    width: 3.5rem;
+                    height: 3.5rem;
                     color: hsl(var(--clr-dark));
                     background-color: hsl(var(--clr-white));
                     border-color: hsl(var(--clr-white));
@@ -902,21 +1114,26 @@
                 </a>
                 <a
                   class="large-pagination tablet fs-6 ff-bellefair flex justify-center align-center"
+                  style="width: 3.5rem; height: 3.5rem"
                   >2
                 </a>
                 <a
                   class="large-pagination tablet fs-6 ff-bellefair flex justify-center align-center"
+                  style="width: 3.5rem; height: 3.5rem"
                   >3
                 </a>
               </div>
               <div class="flex justify-center" style="gap: 3.375rem">
                 <a
                   class="large-pagination tablet fs-6 ff-bellefair flex justify-center align-center"
+                  style="width: 3.5rem; height: 3.5rem"
                   >1
                 </a>
                 <a
                   class="large-pagination tablet fs-6 ff-bellefair flex justify-center align-center"
                   style="
+                    width: 3.5rem;
+                    height: 3.5rem;
                     color: hsl(var(--clr-dark));
                     background-color: hsl(var(--clr-white));
                     border-color: hsl(var(--clr-white));
@@ -925,21 +1142,26 @@
                 </a>
                 <a
                   class="large-pagination tablet fs-6 ff-bellefair flex justify-center align-center"
+                  style="width: 3.5rem; height: 3.5rem"
                   >3
                 </a>
               </div>
               <div class="flex justify-center" style="gap: 3.375rem">
                 <a
                   class="large-pagination tablet fs-6 ff-bellefair flex justify-center align-center"
+                  style="width: 3.5rem; height: 3.5rem"
                   >1
                 </a>
                 <a
                   class="large-pagination tablet fs-6 ff-bellefair flex justify-center align-center"
+                  style="width: 3.5rem; height: 3.5rem"
                   >2
                 </a>
                 <a
                   class="large-pagination tablet fs-6 ff-bellefair flex justify-center align-center"
                   style="
+                    width: 3.5rem;
+                    height: 3.5rem;
                     color: hsl(var(--clr-dark));
                     background-color: hsl(var(--clr-white));
                     border-color: hsl(var(--clr-white));
@@ -950,12 +1172,23 @@
             </div>
           </div>
 
-          <div class="pagination-states grid">
+          <div
+            class="grid border-light"
+            style="
+              grid-template-columns: 1fr 1fr;
+              gap: 5rem;
+              padding: 3rem;
+              --bw: 0.1rem;
+              --bs: dotted;
+            "
+          >
             <div class="flex column justify-center" style="gap: 3.375rem">
               <div class="flex justify-center" style="gap: 3.375rem">
                 <a
                   class="large-pagination mobile fs-9 ff-bellefair flex justify-center align-center"
                   style="
+                    width: 2.5rem;
+                    height: 2.5rem;
                     color: hsl(var(--clr-dark));
                     background-color: hsl(var(--clr-white));
                     border-color: hsl(var(--clr-white));
@@ -964,21 +1197,26 @@
                 </a>
                 <a
                   class="large-pagination mobile fs-9 ff-bellefair flex justify-center align-center"
+                  style="width: 2.5rem; height: 2.5rem"
                   >2
                 </a>
                 <a
                   class="large-pagination mobile fs-9 ff-bellefair flex justify-center align-center"
+                  style="width: 2.5rem; height: 2.5rem"
                   >3
                 </a>
               </div>
               <div class="flex justify-center" style="gap: 3.375rem">
                 <a
                   class="large-pagination mobile fs-9 ff-bellefair flex justify-center align-center"
+                  style="width: 2.5rem; height: 2.5rem"
                   >1
                 </a>
                 <a
                   class="large-pagination mobile fs-9 ff-bellefair flex justify-center align-center"
                   style="
+                    width: 2.5rem;
+                    height: 2.5rem;
                     color: hsl(var(--clr-dark));
                     background-color: hsl(var(--clr-white));
                     border-color: hsl(var(--clr-white));
@@ -987,21 +1225,26 @@
                 </a>
                 <a
                   class="large-pagination mobile fs-9 ff-bellefair flex justify-center align-center"
+                  style="width: 2.5rem; height: 2.5rem"
                   >3
                 </a>
               </div>
               <div class="flex justify-center" style="gap: 3.375rem">
                 <a
                   class="large-pagination mobile fs-9 ff-bellefair flex justify-center align-center"
+                  style="width: 2.5rem; height: 2.5rem"
                   >1
                 </a>
                 <a
                   class="large-pagination mobile fs-9 ff-bellefair flex justify-center align-center"
+                  style="width: 2.5rem; height: 2.5rem"
                   >2
                 </a>
                 <a
                   class="large-pagination mobile fs-9 ff-bellefair flex justify-center align-center"
                   style="
+                    width: 2.5rem;
+                    height: 2.5rem;
                     color: hsl(var(--clr-dark));
                     background-color: hsl(var(--clr-white));
                     border-color: hsl(var(--clr-white));
