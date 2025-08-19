@@ -134,56 +134,28 @@ select {
   gap: var(--gap, 1rem);
 }
 
-.row {
-  flex-direction: row;
-}
-
 .column {
   flex-direction: column;
-}
-
-.justify-start {
-  justify-content: start;
 }
 
 .justify-center {
   justify-content: center;
 }
 
-.justify-end {
-  justify-content: end;
-}
-
 .justify-between {
   justify-content: space-between;
 }
 
-.align-start {
-  align-items: flex-start;
+.justify-items {
+  justify-items: center;
 }
 
 .align-center {
   align-items: center;
 }
 
-.align-end {
-  align-items: flex-end;
-}
-
 .wrap {
   flex-wrap: wrap;
-}
-
-.flow > *:where(:not(:first-child)) {
-  margin-top: var(--flow-space, 1rem);
-}
-
-.position-relative {
-  position: relative;
-}
-
-.position-absolute {
-  position: absolute;
 }
 
 .border-dark {

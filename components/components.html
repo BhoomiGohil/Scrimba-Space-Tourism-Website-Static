@@ -11,13 +11,29 @@
     />
     <title>Components</title>
     <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="../components/components.css" />
     <style>
+      .navigation-menu.mobile {
+        border-right: 0.188rem solid transparent;
+      }
+
       .navigation-menu.mobile:hover {
-        border-right-color: hsl(var(--clr-white) / 0.5) !important;
+        border-right-color: hsl(var(--clr-white) / 0.5);
       }
 
       .navigation-menu.mobile:active {
-        border-right-color: hsl(var(--clr-white)) !important;
+        border-right-color: hsl(var(--clr-white));
+      }
+
+      .button.mobile:hover,
+      .button.mobile:focus {
+        box-shadow: 0 0 0 4rem hsl(var(--clr-white) / 0.1);
+      }
+
+      @media (min-width: 0px) and (max-width: 991px) {
+        .grid {
+          grid-template-columns: 1fr !important;
+        }
       }
     </style>
   </head>
@@ -57,13 +73,13 @@
           </div>
 
           <div
-            class="grid border-light"
+            class="grid align-center border-light"
             style="
               padding: 3rem;
+              grid-template-columns: 1fr 1fr;
+              gap: 2rem;
               --bw: 0.1rem;
               --bs: dotted;
-              grid-template-columns: 1fr 1fr;
-              gap: 3rem;
             "
           >
             <div class="flex justify-center align-center" style="gap: 2rem">
@@ -120,7 +136,6 @@
                   height: auto;
                   border-top: none;
                   border-bottom: none;
-                  border-right: 0.188rem solid transparent;
                 "
               >
                 <span class="bold letter-spacing-207"> 00 </span>
@@ -206,8 +221,15 @@
           </div>
 
           <div
-            class="flex justify-center border-light"
-            style="padding: 3rem; --bw: 0.1rem; --bs: dotted; gap: 16.688rem"
+            class="grid border-light"
+            style="
+              padding: 3rem;
+              grid-template-columns: 1fr 1fr;
+              justify-items: center;
+              gap: 2rem;
+              --bw: 0.1rem;
+              --bs: dotted;
+            "
           >
             <!-- 
             *****
@@ -230,7 +252,6 @@
             *****
             *****
             -->
-
             <a
               class="button flex justify-center align-center bg-white fs-4 ff-bellefair text-dark uppercase"
               style="
@@ -243,8 +264,15 @@
           </div>
 
           <div
-            class="flex justify-center border-light"
-            style="padding: 3rem; --bw: 0.1rem; --bs: dotted; gap: 16.688rem"
+            class="grid border-light"
+            style="
+              padding: 3rem;
+              grid-template-columns: 1fr 1fr;
+              justify-items: center;
+              gap: 2rem;
+              --bw: 0.1rem;
+              --bs: dotted;
+            "
           >
             <a
               class="button mobile flex justify-center align-center bg-white fs-9 ff-bellefair text-dark uppercase"
@@ -266,11 +294,11 @@
           </div>
 
           <div
-            class="grid border-light"
+            class="grid border-light align-center"
             style="
-              grid-template-columns: 1fr 1fr;
-              gap: 5rem;
               padding: 3rem;
+              grid-template-columns: 1fr 1fr;
+              gap: 2rem;
               --bw: 0.1rem;
               --bs: dotted;
             "
@@ -315,11 +343,11 @@
           </div>
 
           <div
-            class="grid border-light"
+            class="grid border-light align-center"
             style="
-              grid-template-columns: 1fr 1fr;
-              gap: 5rem;
               padding: 3rem;
+              grid-template-columns: 1fr 1fr;
+              gap: 2rem;
               --bw: 0.1rem;
               --bs: dotted;
             "
@@ -398,7 +426,7 @@
         >
           <h3 class="fs-3 ff-bellefair uppercase">Grouped Components</h3>
           <div
-            class="navigation-container flex column border-light"
+            class="flex column border-light"
             style="padding: 3rem; --bw: 0.1rem; --bs: dotted"
           >
             <!-- 
@@ -466,7 +494,7 @@
           </div>
 
           <div
-            class="navigation-container flex column border-light"
+            class="flex column border-light"
             style="padding: 3rem; --bw: 0.1rem; --bs: dotted"
           >
             <div
@@ -530,7 +558,7 @@
             </div>
           </div>
           <div
-            class="navigation-container flex column border-light"
+            class="flex column border-light"
             style="padding: 3rem; --bw: 0.1rem; --bs: dotted"
           >
             <div
@@ -569,7 +597,6 @@
                     height: auto;
                     border-bottom: none;
                     border-top: none;
-                    border-right: 0.188rem solid transparent;
                   "
                 >
                   <span class="bold letter-spacing-207"> 00 </span>
@@ -583,7 +610,6 @@
                     height: auto;
                     border-bottom: none;
                     border-top: none;
-                    border-right: 0.188rem solid transparent;
                   "
                 >
                   <span class="bold letter-spacing-207"> 01 </span>
@@ -597,7 +623,6 @@
                     height: auto;
                     border-bottom: none;
                     border-top: none;
-                    border-right: 0.188rem solid transparent;
                   "
                 >
                   <span class="bold letter-spacing-207"> 02 </span>
@@ -611,7 +636,6 @@
                     height: auto;
                     border-bottom: none;
                     border-top: none;
-                    border-right: 0.188rem solid transparent;
                   "
                 >
                   <span class="bold letter-spacing-207"> 03 </span>
@@ -627,13 +651,14 @@
           </div>
 
           <div
-            class="flex row align-center border-light"
+            class="grid align-center border-light"
             style="
-              justify-content: space-around;
               padding: 3rem;
+              grid-template-columns: 1fr 1fr;
+              justify-content: space-around;
+              gap: 2rem;
               --bw: 0.1rem;
               --bs: dotted;
-              gap: 3.938rem;
             "
           >
             <div
@@ -883,11 +908,11 @@
           </div>
 
           <div
-            class="grid border-light"
+            class="grid align-center border-light"
             style="
-              grid-template-columns: 1fr 1fr;
-              gap: 5rem;
               padding: 3rem;
+              grid-template-columns: 1fr 1fr;
+              gap: 2rem;
               --bw: 0.1rem;
               --bs: dotted;
             "
@@ -1013,11 +1038,11 @@
           </div>
 
           <div
-            class="grid border-light"
+            class="grid align-center border-light"
             style="
-              grid-template-columns: 1fr 1fr;
-              gap: 5rem;
               padding: 3rem;
+              grid-template-columns: 1fr 1fr;
+              gap: 2rem;
               --bw: 0.1rem;
               --bs: dotted;
             "
@@ -1173,11 +1198,11 @@
           </div>
 
           <div
-            class="grid border-light"
+            class="grid align-center border-light"
             style="
-              grid-template-columns: 1fr 1fr;
-              gap: 5rem;
               padding: 3rem;
+              grid-template-columns: 1fr 1fr;
+              gap: 2rem;
               --bw: 0.1rem;
               --bs: dotted;
             "
