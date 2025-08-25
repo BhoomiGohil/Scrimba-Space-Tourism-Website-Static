@@ -18,21 +18,6 @@ The project focuses on **HTML, CSS, and responsive design** to match the provide
 - **CSS3** (Flexbox, Grid)
 - Responsive Design principles
 
-## 📂 Project Structure
-
-.
-├── index.html # Home page
-├── index.css # Main stylesheet
-├── assets/ # Images
-├── components/
-│ └── components.html- # Components page
-│ └── design-system.html- # Design System page
-├── html/
-│ └── destination- # Destination page
-│ └── crew- Crew page
-│ └── technology- # Technology page
-└── README.md
-
 ## 🎨 Preview
 
 ![Space Tourism Preview](assets/preview.png)

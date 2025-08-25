@@ -328,10 +328,6 @@ select {
 .logo {
   width: 3rem;
   height: 3rem;
-  background-image: url(./assets/shared/logo.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .navigation {
@@ -520,7 +516,7 @@ select {
 }
 
 .content.technology {
-  width: 94.688rem;
+  width: 91.688rem;
 }
 
 /**********************/
