@@ -1,37 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+    <title>Frontend Mentor | Space tourism website</title>
+    <link rel="stylesheet" href="../index.css" />
+    <style>
+      .main {
+        background-image: url(../assets/destination/background-destination-desktop.jpg);
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+      }
 
-  01 Pick your destination
+      @media (min-width: 736px) and (max-width: 832px) {
+        .main {
+          background-image: url(../assets/destination/background-destination-tablet.jpg);
+        }
+      }
 
-  Moon
-  Mars
-  Europa
-  Titan
-
-  Titan
-
-  The only moon known to have a dense atmosphere other than Earth, Titan 
-  is a home away from home (just a few hundred degrees colder!). As a 
-  bonus, you get striking views of the Rings of Saturn.
-
-  Avg. distance
-  1.6 bil. km
-
-  Est. travel time
-  7 years
-</body>
+      @media (min-width: 0px) and (max-width: 735px) {
+        .main {
+          background-image: url(../assets/destination/background-destination-mobile.jpg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="navigation flex align-center justify-between">
+        <a href="../index.html" class="logo"></a>
+        <div
+          class="navigation-divider divider-white"
+          style="--o: 25%; z-index: 1"
+        ></div>
+        <input type="checkbox" id="navigation-mobile-menu-button" />
+        <label
+          for="navigation-mobile-menu-button"
+          class="navigation-mobile-menu"
+        >
+        </label>
+        <div class="navigation-menu-container flex align-center">
+          <a
+            class="navigation-menu flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
+            href="../index.html"
+          >
+            <span class="bold letter-spacing-207"> 00 </span>
+            Home
+          </a>
+          <a
+            class="navigation-menu active flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
+            href="./destination-moon.html"
+          >
+            <span class="bold letter-spacing-207"> 01 </span>
+            Destination
+          </a>
+          <a
+            class="navigation-menu flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
+            href="./crew-commander.html"
+          >
+            <span class="bold letter-spacing-207"> 02 </span>
+            Crew
+          </a>
+          <a
+            class="navigation-menu flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
+            href="./technology-vehicle.html"
+          >
+            <span class="bold letter-spacing-207"> 03 </span>
+            Technology
+          </a>
+        </div>
+      </div>
+      <div class="main-content destination flex justify-center">
+        <div class="content destination flex column justify-center">
+          <h5 class="numbered-title"><span>01</span> PICK YOUR DESTINATION</h5>
+          <div
+            class="content-grid destination flex align-center justify-between"
+          >
+            <div class="content-image destination flex">
+              <img
+                src="../assets/destination/image-titan.webp"
+                style="width: 100%; height: 100%"
+              />
+            </div>
+            <div class="content-block destination flex column justify-center">
+              <div class="tabs-menu-container flex align-center">
+                <a
+                  class="tabs-menu flex fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
+                  href="./destination-moon.html"
+                >
+                  Moon
+                </a>
+                <a
+                  class="tabs-menu flex fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
+                  href="./destination-mars.html"
+                >
+                  Mars
+                </a>
+                <a
+                  class="tabs-menu flex fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
+                  href="./destination-europa.html"
+                >
+                  Europa
+                </a>
+                <a
+                  class="tabs-menu flex fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
+                  href="./destination-titan.html"
+                  style="border-color: hsl(var(--clr-white))"
+                >
+                  Titan
+                </a>
+              </div>
+              <div class="flex column">
+                <h1 class="fs-2 ff-bellefair uppercase text-white">TITAN</h1>
+                <p class="fs-9 ff-barlow text-light">
+                  The only moon known to have a dense atmosphere other than
+                  Earth, Titan is a home away from home (just a few hundred
+                  degrees colder!). As a bonus, you get striking views of the
+                  Rings of Saturn.
+                </p>
+              </div>
+              <div class="divider-white" style="--o: 25%"></div>
+              <div
+                class="grid align-center"
+                style="grid-template-columns: 1fr 1fr"
+              >
+                <div class="flex column" style="gap: 0.75rem">
+                  <p
+                    class="fs-7 ff-barlow-cond letter-spacing-2 text-light uppercase"
+                  >
+                    AVG. DISTANCE
+                  </p>
+                  <h6 class="fs-6 ff-bellefair text-white uppercase">
+                    1.6 BIL. km
+                  </h6>
+                </div>
+                <div class="flex column" style="gap: 0.75rem">
+                  <p
+                    class="fs-7 ff-barlow-cond letter-spacing-2 text-light uppercase"
+                  >
+                    Est. travel time
+                  </p>
+                  <h6 class="fs-6 ff-bellefair text-white uppercase">
+                    7 years
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

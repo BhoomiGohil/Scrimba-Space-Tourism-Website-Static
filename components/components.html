@@ -438,17 +438,18 @@
             -->
             <!-- **************************** Start Whole Navigation Component **************************** -->
             <div class="navigation flex align-center justify-between">
-              <img
-                class="logo"
-                src="../assets/shared/logo.svg"
-                alt="Logo of the site"
-              />
-              <div class="navigation-divider divider-white"></div>
+              <a href="./index.html" class="logo"></a>
+              <div
+                class="navigation-divider divider-white"
+                style="--o: 25%; z-index: 1"
+              ></div>
+              <input type="checkbox" id="navigation-mobile-menu-button" />
+              <label
+                for="navigation-mobile-menu-button"
+                class="navigation-mobile-menu"
+              >
+              </label>
               <div class="navigation-menu-container flex align-center">
-                <img
-                  src="../assets/shared/icon-close.svg"
-                  class="navigation-mobile-menu-close flex"
-                />
                 <a
                   class="navigation-menu flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
                   href="../index.html"
@@ -458,30 +459,26 @@
                 </a>
                 <a
                   class="navigation-menu flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
-                  href="../index.html"
+                  href="./html/destination-moon.html"
                 >
                   <span class="bold letter-spacing-207"> 01 </span>
                   Destination
                 </a>
                 <a
                   class="navigation-menu flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
-                  href="../index.html"
+                  href="./html/crew-commander.html"
                 >
                   <span class="bold letter-spacing-207"> 02 </span>
                   Crew
                 </a>
                 <a
-                  class="navigation-menu flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase"
-                  href="../index.html"
+                  class="navigation-menu flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
+                  href="./html/technology-vehicle.html"
                 >
                   <span class="bold letter-spacing-207"> 03 </span>
                   Technology
                 </a>
               </div>
-              <img
-                src="../assets/shared/icon-hamburger.svg"
-                class="navigation-mobile-menu"
-              />
             </div>
             <!-- **************************** End Whole Navigation Component **************************** -->
             <!-- 
@@ -523,7 +520,7 @@
                   class="navigation-mobile-menu-close flex"
                 />
                 <a
-                  class="navigation-menu flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase"
+                  class="navigation-menu active flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase"
                   href="../index.html"
                 >
                   <span class="bold letter-spacing-207"> 00 </span>

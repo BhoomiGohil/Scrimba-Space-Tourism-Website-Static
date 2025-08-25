@@ -1,27 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+    <title>Frontend Mentor | Space tourism website</title>
+    <link rel="stylesheet" href="../index.css" />
+    <style>
+      .main {
+        background-image: url(../assets/crew/background-crew-desktop.jpg);
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+      }
 
-  02 Meet your crew
+      @media (min-width: 375px) and (max-width: 768px) {
+        .main {
+          background-image: url(../assets/crew/background-crew-tablet.jpg);
+        }
+      }
 
-  Mission Specialist
-  Mark Shuttleworth
-
-  Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind 
-  the Linux-based Ubuntu operating system. Shuttleworth became the first South 
-  African to travel to space as a space tourist.
-</body>
+      @media (min-width: 0px) and (max-width: 374px) {
+        .main {
+          background-image: url(../assets/crew/background-crew-mobile.jpg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="navigation flex align-center justify-between">
+        <a href="../index.html" class="logo"></a>
+        <div
+          class="navigation-divider divider-white"
+          style="--o: 25%; z-index: 1"
+        ></div>
+        <input type="checkbox" id="navigation-mobile-menu-button" />
+        <label
+          for="navigation-mobile-menu-button"
+          class="navigation-mobile-menu"
+        >
+        </label>
+        <div class="navigation-menu-container flex align-center">
+          <a
+            class="navigation-menu flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
+            href="../index.html"
+          >
+            <span class="bold letter-spacing-207"> 00 </span>
+            Home
+          </a>
+          <a
+            class="navigation-menu flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
+            href="./destination-moon.html"
+          >
+            <span class="bold letter-spacing-207"> 01 </span>
+            Destination
+          </a>
+          <a
+            class="navigation-menu active flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
+            href="./crew-commander.html"
+          >
+            <span class="bold letter-spacing-207"> 02 </span>
+            Crew
+          </a>
+          <a
+            class="navigation-menu flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
+            href="./technology-vehicle.html"
+          >
+            <span class="bold letter-spacing-207"> 03 </span>
+            Technology
+          </a>
+        </div>
+      </div>
+      <div class="main-content crew flex justify-center">
+        <div class="content crew flex column justify-center">
+          <h5 class="numbered-title"><span>02</span>MEET YOUR CREW</h5>
+          <div class="content-grid crew flex align-stretch justify-between">
+            <div class="content-block crew flex column">
+              <div
+                class="flex column justify-center"
+                style="gap: 2.5rem; flex-grow: 1"
+              >
+                <div class="flex column">
+                  <h4 class="fs-4 ff-bellefair uppercase text-white">
+                    Mission Specialist
+                  </h4>
+                  <h3 class="fs-3 ff-bellefair uppercase text-white">
+                    MARK SHUTTLEWORTH
+                  </h3>
+                </div>
+                <p class="fs-9 ff-barlow text-light">
+                  Mark Richard Shuttleworth is the founder and CEO of Canonical,
+                  the company behind the Linux-based Ubuntu operating system.
+                  Shuttleworth became the first South African to travel to space
+                  as a space tourist.
+                </p>
+              </div>
+              <div class="small-pagination-container flex">
+                <a
+                  class="small-pagination bg-white"
+                  href="../html/crew-commander.html"
+                ></a>
+                <a
+                  class="small-pagination bg-white"
+                  href="../html/crew-specialist.html"
+                  style="opacity: 100%"
+                ></a>
+                <a
+                  class="small-pagination bg-white"
+                  href="../html/crew-pilot.html"
+                ></a>
+                <a
+                  class="small-pagination bg-white"
+                  href="../html/crew-engineer.html"
+                ></a>
+              </div>
+            </div>
+            <div class="content-image crew flex justify-center align-end">
+              <img src="../assets/crew/image-mark-shuttleworth.webp" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
