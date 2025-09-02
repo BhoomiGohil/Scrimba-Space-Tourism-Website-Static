@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./index.css" />
     <style>
       .main {
+        align-items: end;
         background-image: url(./assets/home/background-home-desktop.jpg);
         background-size: cover;
         background-position: top;
@@ -23,20 +24,22 @@
 
       @media (min-width: 736px) and (max-width: 832px) {
         .main {
+          align-items: center;
           background-image: url(./assets/home/background-home-tablet.jpg);
         }
       }
 
       @media (min-width: 0px) and (max-width: 735px) {
         .main {
+          align-items: center;
           background-image: url(./assets/home/background-home-mobile.jpg);
         }
       }
     </style>
   </head>
   <body>
-    <div class="main align-end">
-      <div class="navigation flex align-center justify-between">
+    <div class="main">
+      <div class="navigation flex-between-center">
         <img src="../assets/shared/logo.svg" class="logo" />
         <div
           class="navigation-divider divider-white"
@@ -48,30 +51,30 @@
           class="navigation-mobile-menu"
         >
         </label>
-        <div class="navigation-menu-container flex align-center">
+        <div class="navigation-menu-container flex-align-center">
           <a
-            class="navigation-menu active flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
+            class="navigation-menu active flex-align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
             href="../index.html"
           >
             <span class="bold letter-spacing-207"> 00 </span>
             Home
           </a>
           <a
-            class="navigation-menu flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
+            class="navigation-menu flex-align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
             href="../html/destination-moon.html"
           >
             <span class="bold letter-spacing-207"> 01 </span>
             Destination
           </a>
           <a
-            class="navigation-menu flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
+            class="navigation-menu flex-align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
             href="../html/crew-commander.html"
           >
             <span class="bold letter-spacing-207"> 02 </span>
             Crew
           </a>
           <a
-            class="navigation-menu flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
+            class="navigation-menu flex-align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
             href="../html/technology-vehicle.html"
           >
             <span class="bold letter-spacing-207"> 03 </span>
@@ -79,7 +82,7 @@
           </a>
         </div>
       </div>
-      <div class="content-grid index align-center">
+      <div class="content-grid index grid-align-center">
         <div class="content-block index flex column">
           <h5 class="fs-5 ff-barlow-cond letter-spacing-4 uppercase text-light">
             So, you want to travel to
@@ -92,9 +95,9 @@
             world experience!
           </p>
         </div>
-        <div class="content-button index flex column align-end">
+        <div class="content-button index flex-justify-end">
           <a
-            class="button flex justify-center align-center bg-white fs-4 ff-bellefair text-dark uppercase"
+            class="button flex-center-center bg-white fs-4 ff-bellefair text-dark uppercase"
           >
             Explore
           </a>
