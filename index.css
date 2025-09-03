@@ -475,6 +475,7 @@ select {
   border-radius: 100%;
   border: 0.063rem solid hsl(var(--clr-white) / 0.25);
   cursor: pointer;
+  color: hsl(var(--clr-white));
 }
 
 .large-pagination:hover {
