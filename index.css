@@ -718,6 +718,7 @@ select {
       minmax(2rem, 1fr);
     justify-items: center;
     text-align: center;
+    gap: 1rem;
   }
 
   .content-grid.index {
@@ -964,10 +965,11 @@ select {
 
   .content-grid {
     grid-template-columns:
-      minmax(2rem, 1fr) 10fr
-      minmax(2rem, 1fr);
+      minmax(1rem, 1fr) 10fr
+      minmax(1rem, 1fr);
     justify-items: center;
     text-align: center;
+    gap: 1rem;
   }
 
   .content-grid.index {
@@ -977,8 +979,8 @@ select {
 
   .content-grid.technology {
     grid-template-columns:
-      minmax(2rem, 1fr) 10fr
-      minmax(2rem, 1fr);
+      minmax(1rem, 1fr) 10fr
+      minmax(1rem, 1fr);
   }
 
   /**********************/
