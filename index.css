@@ -401,6 +401,7 @@ select {
 }
 
 .navigation-menu-container {
+  display: flex;
   padding: 0 4rem 0 6rem;
   gap: 3rem;
   background-color: hsl(var(--clr-white) / 0.05);
@@ -822,10 +823,6 @@ select {
     grid-column: 1 / 4 !important;
   }
 
-  .main {
-    position: relative;
-  }
-
   .logo {
     width: 2.5rem;
     height: 2.5rem;
@@ -919,6 +916,7 @@ select {
 
   .main {
     align-items: start;
+    position: relative;
   }
 
   /* ------------------ */
