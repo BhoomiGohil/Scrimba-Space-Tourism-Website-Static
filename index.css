@@ -414,9 +414,11 @@ select {
   border-top: 0.188rem solid transparent;
   border-bottom: 0.188rem solid transparent;
   border-right: none;
+  color: hsl(var(--clr-white));
 }
 
-.navigation-menu:hover {
+.navigation-menu:hover,
+.navigation-menu.hover {
   border-bottom-color: hsl(var(--clr-white) / 0.5);
 }
 
@@ -443,7 +445,8 @@ select {
   color: hsl(var(--clr-light));
 }
 
-.tabs-menu:hover {
+.tabs-menu:hover,
+.tabs-menu.hover {
   border-color: hsl(var(--clr-white) / 0.5);
   color: hsl(var(--clr-white));
 }
@@ -454,6 +457,7 @@ select {
 
 .tabs-menu.active {
   border-color: hsl(var(--clr-white));
+  color: hsl(var(--clr-white));
 }
 
 .button {
@@ -466,6 +470,7 @@ select {
 }
 
 .button:hover,
+.button.hover,
 .button:focus {
   box-shadow: 0 0 0 5.5rem hsl(var(--clr-white) / 0.1);
   color: hsl(var(--clr-dark) / 0.5);
@@ -483,7 +488,8 @@ select {
   cursor: pointer;
 }
 
-.small-pagination:hover {
+.small-pagination:hover,
+.small-pagination.hover {
   opacity: 50.01%;
 }
 
@@ -509,7 +515,8 @@ select {
   color: hsl(var(--clr-white));
 }
 
-.large-pagination:hover {
+.large-pagination:hover,
+.large-pagination.hover {
   border-color: hsl(var(--clr-white));
 }
 
@@ -819,14 +826,14 @@ select {
     position: relative;
   }
 
-  .navigation {
-    height: auto;
-    padding: 1.5rem;
-  }
-
   .logo {
     width: 2.5rem;
     height: 2.5rem;
+  }
+
+  .navigation {
+    height: auto;
+    padding: 1.5rem;
   }
 
   .navigation-divider {
