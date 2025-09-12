@@ -36,42 +36,42 @@
   </head>
   <body>
     <div class="main">
-      <div class="navigation flex-between-center">
+      <div class="navigation flex justify-between align-center">
         <img src="../assets/shared/logo.svg" class="logo" />
-        <div
-          class="navigation-divider divider-white"
-          style="--o: 25%; z-index: 1"
-        ></div>
+        <div class="navigation-divider divider-white"></div>
         <input type="checkbox" id="navigation-mobile-menu-button" />
         <label
           for="navigation-mobile-menu-button"
-          class="navigation-mobile-menu"
+          class="navigation-mobile-menu flex column justify-between align-center"
         >
+          <div class="menu-lines divider-white"></div>
+          <div class="menu-lines divider-white"></div>
+          <div class="menu-lines divider-white"></div>
         </label>
-        <div class="navigation-menu-container flex-align-center">
+        <div class="navigation-menu-container flex">
           <a
-            class="navigation-menu flex-align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
+            class="navigation-menu active flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
             href="../index.html"
           >
             <span class="bold letter-spacing-207"> 00 </span>
             Home
           </a>
           <a
-            class="navigation-menu active flex-align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
+            class="navigation-menu flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
             href="../html/destination-moon.html"
           >
             <span class="bold letter-spacing-207"> 01 </span>
             Destination
           </a>
           <a
-            class="navigation-menu flex-align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
+            class="navigation-menu flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
             href="../html/crew-commander.html"
           >
             <span class="bold letter-spacing-207"> 02 </span>
             Crew
           </a>
           <a
-            class="navigation-menu flex-align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
+            class="navigation-menu flex align-center fs-8 ff-barlow-cond letter-spacing-2 uppercase text-white"
             href="../html/technology-vehicle.html"
           >
             <span class="bold letter-spacing-207"> 03 </span>
@@ -79,18 +79,18 @@
           </a>
         </div>
       </div>
-      <div class="content-grid destination grid-align-center">
+      <div id="contentDestination" class="content-grid grid destination">
         <h5 class="numbered-title" style="grid-column: 2/4">
           <span>01</span> PICK YOUR DESTINATION
         </h5>
-        <div class="content-image destination">
+        <div class="content-image destination align-self-center">
           <img
             src="../assets/destination/image-mars.webp"
             style="width: 100%; height: 100%"
           />
         </div>
-        <div class="content-block destination column">
-          <div class="tabs-menu-container">
+        <div class="content-block destination flex column align-self-center">
+          <div class="tabs-menu-container flex">
             <a
               class="tabs-menu flex fs-8 ff-barlow-cond letter-spacing-2 uppercase"
               href="./destination-moon.html"
