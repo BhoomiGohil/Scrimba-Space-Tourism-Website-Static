@@ -373,27 +373,6 @@ select {
   z-index: 1;
 }
 
-#navigation-mobile-menu-button {
-  display: none;
-}
-
-.navigation-mobile-menu {
-  width: 24px;
-  height: 24px;
-  display: none;
-  gap: 0;
-  position: absolute;
-  right: 4rem;
-  z-index: 101;
-  cursor: pointer;
-}
-
-.menu-lines {
-  width: 100%;
-  --h: 0.23rem;
-  --o: 100%;
-}
-
 .navigation-menu-container {
   padding: 0 4rem 0 6rem;
   gap: 3rem;
@@ -422,6 +401,25 @@ select {
 
 .navigation-menu.active {
   border-bottom-color: hsl(var(--clr-white));
+}
+
+#navigation-mobile-menu-button {
+  display: none;
+}
+
+.navigation-mobile-menu {
+  width: 24px;
+  height: 24px;
+  display: none;
+  position: relative;
+  z-index: 101;
+  cursor: pointer;
+}
+
+.menu-lines {
+  width: 100%;
+  --h: 0.23rem;
+  --o: 100%;
 }
 
 .tabs-menu-container {
@@ -823,12 +821,12 @@ select {
   .navigation-menu-container {
     height: 100vh;
     flex-direction: column;
+    align-items: end;
     gap: 2rem;
-    padding: 7rem 0 2rem 2rem;
     position: fixed;
     inset: 0 0 0 20%;
-    transform: translate(100%);
     z-index: 100;
+    padding: 7rem 0 7rem 2rem;
   }
 
   .navigation-menu {
@@ -844,16 +842,17 @@ select {
   }
 
   .navigation-mobile-menu {
-    right: 2rem;
     display: flex;
   }
 
-  #navigation-mobile-menu-button:checked ~ .navigation-menu-container {
+  .navigation-menu-container:has(+ #navigation-mobile-menu-button:checked) {
     transform: translate(0%);
     transition: transform 0.5s ease-out;
   }
 
-  #navigation-mobile-menu-button:not(:checked) ~ .navigation-menu-container {
+  .navigation-menu-container:has(
+      + #navigation-mobile-menu-button:not(:checked)
+    ) {
     transform: translate(100%);
     transition: transform 0.5s ease-out;
   }
